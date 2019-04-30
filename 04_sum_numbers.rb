@@ -11,9 +11,12 @@
 # ruby tests/04_sum_numbers_test.rb
 
 def sum_numbers (numbers)
-  # Your code here
+  sum = 0
+  sum += numbers
 end
 
+sum_numbers = ([1,1,1])
+sum_numbers = ([5,2,100,0,10])
 
 # OPTIONAL:
 # Go to the tests folder and open 04_sum_numbers_test.rb.
