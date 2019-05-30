@@ -9,14 +9,17 @@
 
 # Check your solution by running the tests:
 # ruby tests/04_sum_numbers_test.rb
-
-def sum_numbers (numbers)
+def sum_numbers(numbers)
   sum = 0
-  sum += numbers
+  numbers.each do |i| # i = inside the array
+    sum += i # incraments each number and adds them together
+  end
+  return sum
 end
 
-sum_numbers = ([1,1,1])
-sum_numbers = ([5,2,100,0,10])
+puts sum_numbers([1,2])
+
+# puts sum # call sum 
 
 # OPTIONAL:
 # Go to the tests folder and open 04_sum_numbers_test.rb.

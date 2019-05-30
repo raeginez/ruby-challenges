@@ -11,19 +11,35 @@
 # ruby tests/09_vowels_test.rb
 
 
-user = gets.chomp
-
-vowels = "a, e, i, o, u"
-vowels_count = 0
 
 
-user.split("").each do |x|
-    if user.include?(vowels)
-        vowels_count += 1
+
+# "This is a test".scan(/[aeiou]/) { |x| puts x }
+
+
+def vowels (test)
+    vowels_arr = ["a", "e", "i", "o", "u"]
+    result = []
+
+    test.chars.each do |x|
+        if vowels_arr.include?(x.downcase)
+            result << x
+        end
     end
+
+    return result
 end
 
-puts "the vowels are: ", vowels_count
+string = "I like pasta"
+puts "#{vowels(string)}"
+
+# user.split("").each do |x|
+#     if user.include?(vowels)
+#         vowels_count += 1
+#     end
+# end
+
+# puts "the vowels are: ", vowels_count
 
 
 
